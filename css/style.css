@@ -83,3 +83,177 @@ body {
 	right: 0;
 	bottom: -5px;
 }
+
+.slide {
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	padding-left: 100px;
+}
+
+.slide-text-light {
+	background-color: grey;
+	color: #fff;
+}
+
+.slide-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 51px;
+}
+
+.slide-text {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 30px;
+}
+
+.button-primary {
+	background: #F47322;
+	color: #fff;
+}
+
+.button-default {
+	background-color: #fff;
+	color: #5F5F61;
+
+}
+
+.button {
+	border-radius: 25px;
+	padding: 15px 50px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.slide-content {
+	position: relative;
+	max-width: 400px;
+}
+
+.slide-summer {
+	background-image: url('../images/summer.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slide:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.promo {
+	margin-top: 50px;
+	margin-bottom: 110px;
+	display: flex; /* Для того чтобы сделать две карточки */
+	justify-content: space-between;
+
+}
+
+.card {
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	max-width: 570px;
+	min-height: 380px;
+	flex: auto; /* Для того чтобы карточки выравнились по ширине */
+
+}
+
+.card:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+}
+
+.card-text-light {
+	color: #fff;
+}
+
+.card-title {
+	padding-left: 32px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	margin-top: 36px;
+	margin-bottom: 21px;
+}
+
+.card-text {
+	padding-left: 32px;
+	max-width: 168px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 72px;
+}
+
+.card-price {
+	padding-left: 32px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.card-delivery {
+	padding-left: 32px;
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 25px;
+}
+
+.card-image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	object-fit: cover;
+}
+
+.card-footer .button {
+	border-radius: 50px;
+	padding: 13px 52px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+
+
+}
+
+.card-footer a{
+	margin-left: 32px;
+	margin-bottom: 31px;
+
+}
+
